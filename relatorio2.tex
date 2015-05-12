@@ -1,0 +1,170 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{fullpage, setspace, url}
+\usepackage{colortbl}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{indentfirst}
+%\usepackage{algorithm,algorithmic}
+%\definecolor{G6}{rgb}{0.7,0.7,0.7}
+%\newcommand{\fc}{\cellcolor{G6}}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{multirow}
+
+% pacotes malucões
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amstext}
+\usepackage{hyperref}
+\usepackage{ragged2e}
+\usepackage{color}
+\usepackage{enumerate}
+\usepackage{float}
+% fonte
+\usepackage{helvet}
+% coisas de locale
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+
+\addtolength{\textwidth}{2cm}
+\addtolength{\hoffset}{-1cm}
+
+\addtolength{\textheight}{2cm}
+\addtolength{\voffset}{-1cm}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\DUVIDA}[1]{\huge \textbf {\color{red} #1}\normalsize\\} % escreve uma dúvida grandão vermelha
+
+\begin{document}
+% \maketitle
+
+\begin{center}
+    \pagestyle{empty} 
+    % Upper part of the page
+    \textsc{\Large Universidade de São Paulo\\
+    Instituto de Ciências Matemáticas e de Computação\\
+    SSC0130 - Engenharia de Software - Turma A}\\[5.0cm]
+
+    % Title
+    \HRule \\[0.6cm]
+    {\Huge Projeto parte 2\\
+    Plano de Projeto}\\[0.4cm]
+    \HRule \\[3.5cm]
+
+    % Author and supervisor
+    \begin{minipage}{0.45\textwidth}
+	    \begin{flushleft} \normalsize
+    		\emph{Alunos:}
+    		
+			\[\begin{array}{lr}
+	    		\text{Gil Barbosa Reis} & 8532248 \\
+    			\text{Giovane Cunha Mocellin} & 8578382 \\
+		    	\text{Leonardo Sampaio Ferraz Ribeiro} & 8532300 \\
+				\text{Rogério P. Souza} & 5626341
+    		\end{array}\]
+    	\end{flushleft}
+    \end{minipage}
+    \begin{minipage}{0.45\textwidth}
+	    \begin{flushright} \normalsize
+    		\emph{Professora:} \\
+    		Ellen Francine Barbosa
+	    \end{flushright}
+    \end{minipage}
+
+    \vspace{3.0cm}
+
+
+    \vfill
+    % Bottom of the page
+    {\Large São Carlos, SP \\ \today}
+    \thispagestyle{empty} 
+    \newpage
+\end{center}
+
+\thispagestyle{plain} 
+\setcounter{page}{1}
+\setstretch{1.2}
+\newpage
+
+\tableofcontents
+\newpage
+
+\section{Introdução}
+	\subsection{Objetivo do projeto}
+		O objetivo deste documento é, entre outros, estabelecer o escopo do projeto, determinar sua viabilidade, analisar os riscos associados, definir recursos necessários, estimar custos e esforço e desenvolver um cronograma do projeto.
+
+	\subsection{Escopo do projeto}
+		\subsubsection{Descrição do produto}
+			O T-play é  um site voltado para a troca e venda de jogos, tanto físicos, como digitais.
+			Os usuários comuns poderão utilizar o sistema para cadastrar ofertas de seus jogos, efetuar a troca de jogos com outros usuários e 
+pesquisar ofertas de seu interesse.
+			Durante a transação (troca ou venda) entre usuários, pode haver troca de mensagens entre ambos.
+			Ao final das transações, usuários devem atribuir uma nota ao outro usuário participante, e uma nota à usabilidade do T-play.
+			Há um sistema de ranqueamento que ajuda o usuário durante a escolha do melhor candidato à troca.
+			Além disso, caso o usuário queira ofertar um jogo que não exista no sistema, o mesmo pode sugerir o cadastro de tal jogo.
+			
+			Os administradores poderão utilizar o sistema para gerenciar os patrocinadores e outros administradores, moderar negociações problemáticas, gerenciar cadastro de novos jogos e acessar os diversos relatórios.
+
+			Os patrocinadores possuem os mesmos direitos e restrições que os usuários comuns, mas também recebem, mediante a pagamento em interface exclusiva, o direito de apresentar propagandas no site que redirecionam e enfatizam seus oferecimentos de jogos.
+
+		\subsubsection{Principais entregas do projeto}
+			\DUVIDA{Quais ítens devem ter, os do Slide ou os do PDF do trabai?}
+			\begin{itemize}
+				\item Documento de Requisitos
+				\item Plano de projeto (este documento)
+				\item Diagrama WBS
+				\item Rede PERT com caminho crítico
+				\item Tabela de alocação de recursos
+				\item Gráfico de Gannt
+			\end{itemize}
+
+		\subsubsection{Objetivos do projeto}
+			\DUVIDA{Qual a diferença desse pro de cima?}
+			O objetivo do projeto é reduzir o esforço e tempo gastos atualmente por pessoas que trocam jogos pela internet e são obrigados a usarem outros meios de comunicação não destinados a esse fim.
+			
+		\subsubsection{Critérios de aceitação do produto}
+			\begin{itemize}
+				\item Ter menos de 5\% de avaliações negativas sobre a usabilidade do sistema em transações
+				\item 
+			\end{itemize}
+	
+\section{Cronograma de Projeto}
+	\subsection{WBS}
+	\subsection{Rede PERT com caminho crítico}
+	\subsection{Tabela de alocação de recursos}
+	\subsection{Gráfico de Gannt}
+	
+\section{Matriz de Riscos}
+
+\section{Conclusão}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document} 
