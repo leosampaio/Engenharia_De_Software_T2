@@ -4,7 +4,6 @@
 \usepackage{array}
 \usepackage{fullpage, setspace, url}
 \usepackage{colortbl}
-\usepackage{color}
 \usepackage{amsmath}
 \usepackage{indentfirst}
 %\usepackage{algorithm,algorithmic}
@@ -13,6 +12,7 @@
 \usepackage{graphicx}
 \usepackage{subfigure}
 \usepackage{multirow}
+\usepackage[table]{xcolor}
 
 % pacotes malucões
 \usepackage{graphicx}
@@ -125,7 +125,6 @@ pesquisar ofertas de seu interesse.
 			\end{itemize}
 
 		\subsubsection{Objetivos do projeto}
-			\DUVIDA{Qual a diferença desse pro de cima?}
 			O objetivo do projeto é reduzir o esforço e tempo gastos atualmente por pessoas que trocam jogos pela internet e são obrigados a usarem outros meios de comunicação não destinados a esse fim.
 			
 		\subsubsection{Critérios de aceitação do produto}
@@ -143,28 +142,46 @@ pesquisar ofertas de seu interesse.
 	
 \section{Matriz de Riscos}
 	\begin{table}[H]
-		\begin{tabular}{l|c|c|c}
-			\multicolumn{1}{c|}{\textbf{Risco}} & \textbf{Categoria} & \textbf{Probabilidade(\%)} & \textbf{Impacto} \\
+		\begin{tabular}{c|l|c|c|c}
+			\textbf{ID} & \multicolumn{1}{c|}{\textbf{Risco}} & \textbf{Categoria} & \textbf{Prob.(\%)} & \textbf{Impacto} \\
 			\hline
-			Estimativa de tamanho baixa 				& Tamanho do Produto			& 60 & 2 \\
-			Número de usuários maior que esperado 		& Tamanho do Produto			& 40 & 3 \\
-			Prazo final apertado 						& Impacto no Negócio			& 30 & 3 \\
-			Falta de treinamento nas tecnologias usadas	& Recursos humanos				& 20 & 2 \\
-			Alta rotação de pessoal 					& Recursos humanos				& 60 & 2 \\
-			Ausência de participação do cliente			& Conformidade à especificação	& 15 & 4 \\
-			Cliente resistente a mudanças 				& Conformidade à especificação	& 30 & 2 \\
-			Hardware servidor fornecido inadequado		& Funcionamento do sistema		& 30 & 1 \\
+			1 & Estimativa de tamanho baixa 				& Tamanho do Produto			& 60 & 2 \\
+			2 & Número de usuários maior que esperado 		& Tamanho do Produto			& 40 & 3 \\
+			3 & Prazo final apertado 						& Impacto no Negócio			& 30 & 3 \\
+			4 & Falta de treinamento nas tecnologias usadas	& Recursos humanos				& 20 & 2 \\
+			5 & Alta rotação de pessoal 					& Recursos humanos				& 60 & 2 \\
+			6 & Ausência de participação do cliente			& Conformidade à especificação	& 15 & 4 \\
+			7 & Cliente resistente a mudanças 				& Conformidade à especificação	& 30 & 2 \\
+			8 & Hardware servidor fornecido inadequado		& Funcionamento do sistema		& 30 & 1 \\
 		\end{tabular}
-		\caption*{Impactos: 1 - Crítico; 2 - Significativo; 3 - Marginal; 4 - Negligenciável}
+		\caption{Tabela de riscos\\Impactos: 1 - Crítico; 2 - Significativo; 3 - Marginal; 4 - Negligenciável}
+	\end{table}
+	
+	\begin{table}[H]
+		\begin{tabular}{l|c|c|c|c|}
+										& Negligenciável		& Mariginal				& Significativo			& Crítico \\ \hline
+			Frequente (75$\sim$100\%) 	& \cellcolor{yellow}	& \cellcolor{red}		& \cellcolor{red}		& \cellcolor{red} \\ \hline
+			Provável (50$\sim$75\%)		&						& \cellcolor{yellow}	& \cellcolor{red} 1, 5	& \cellcolor{red} \\ \hline
+			Ocasional (25$\sim$50\%)	&  						& 2, 3					& \cellcolor{yellow} 7	& \cellcolor{red} 8 \\ \hline
+			Improvável (0$\sim$25\%)	& 6						&						& 4						& \cellcolor{yellow} \\ \hline
+		\end{tabular}
+		\caption{Matriz de riscos mapeados}
 	\end{table}
 
 	\begin{table}[H]
-		\begin{tabular}{c|c|c|c|c}
-			\textbf{ID} & \textbf{Descrição} & \textbf{Mitigação} & \textbf{Resposta} & \textbf{Impacto} \\
+		\begin{tabular}{c|p{.2\textwidth}|p{.25\textwidth}|p{.25\textwidth}|p{.2\textwidth}}
+			\textbf{ID} & \multicolumn{1}{c|}{\textbf{Descrição}} & \multicolumn{1}{c|}{\textbf{Mitigação}} & \multicolumn{1}{c|}{\textbf{Resposta}} & \multicolumn{1}{c}{\textbf{Impacto}} \\
 			\hline
-			1		
+			1 & Estimativa de tamanho baixa & Ter tolerância no cronograma & Estimar tempo acima para produção & Atraso na produção do sistema \\ \hline
+			2 & Número de usuários maior que esperado & Considerar um servidor de capacidade elástica & Negociar com o cliente & Tempo de resposta prejudicado \\ \hline
+			3 & Prazo final apertado & Aumentar o tempo de dedicação ao projeto & Pagar hora extra para os desenvolvedores envolvidos & Atraso na produção do sistema \\ \hline
+			4 & Falta de treinamento nas tecnologias utilizadas & Ter pessoal treinado & Dar treinamento aos desenvolvedores envolvidos & Atraso na produção do sistema \\ \hline
+			5 & Alta rotação de pessoal & Ter pessoal extra a par do projeto & Interar pessoal extra ao projeto & Atraso na produção do sistema \\ \hline
+			6 & Ausência na participação do cliente & Ter maior comunicação com o cliente & Procurar o cliente mais & Produto incompatível com expectativas do cliente \\ \hline
+			7 & Cliente resistente a mudanças & Comunicação com cliente & Negociar mudanças suaves com cliente & Atraso na produção do sistema \\ \hline
+			8 & Hardware servidor fornecido inadequado & Ter um hardware adequado & Negociar o hardware oferecido com o cliente & Tempo de resposta prejudicado \\
 		\end{tabular}
-		\caption*{Mitigação de Riscos}
+		\caption{Tabela de mitigação de Riscos}
 	\end{table}
 
 
