@@ -34,6 +34,8 @@
 \usepackage[brazil]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
 
 
 \addtolength{\textwidth}{2cm}
@@ -45,11 +47,11 @@
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 \newcommand{\DUVIDA}[1]{\huge \textbf {\color{red} #1}\normalsize \\} % escreve uma dúvida grandão vermelha
 
+
 \begin{document}
 % \maketitle
 
 \begin{center}
-    \pagestyle{empty} 
     % Upper part of the page
     \textsc{\Large Universidade de São Paulo\\
     Instituto de Ciências Matemáticas e de Computação\\
@@ -91,7 +93,9 @@
     \newpage
 \end{center}
 
-\thispagestyle{plain} 
+
+\pagestyle{plain}
+
 \setcounter{page}{1}
 \setstretch{1.2}
 \newpage
@@ -138,9 +142,10 @@ pesquisar ofertas de seu interesse.
 	
 \section{Cronograma de Projeto}
 	\subsection{WBS}
-    	O WBS está representado na figura \ref{WBS} no apêndice \ref{apendice} deste documento.
+    	O WBS está representado na figura \ref{WBSimg} no apêndice \ref{apendice} deste documento.
+
 	\subsection{Rede PERT com caminho crítico}
-		O WBS está representado na figura \ref{PERT} no apêndice \ref{apendice} deste documento.
+		O PERT está representado na figura \ref{PERT} no apêndice \ref{apendice} deste documento.
 	\subsection{Tabela de alocação de recursos}
 	\subsection{Gráfico de Gannt}
 	
