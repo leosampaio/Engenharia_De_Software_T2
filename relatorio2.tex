@@ -17,6 +17,7 @@
 \usepackage[table]{xcolor}
 \usepackage{graphicx} 
 \usepackage{bmpsize}
+\usepackage{pgfgantt}
 
 % pacotes malucões
 \usepackage{graphicx}
@@ -34,8 +35,6 @@
 \usepackage[brazil]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{fancyhdr}
-\usepackage{lastpage}
 
 
 \addtolength{\textwidth}{2cm}
@@ -47,11 +46,11 @@
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 \newcommand{\DUVIDA}[1]{\huge \textbf {\color{red} #1}\normalsize \\} % escreve uma dúvida grandão vermelha
 
-
 \begin{document}
 % \maketitle
 
 \begin{center}
+    \pagestyle{empty} 
     % Upper part of the page
     \textsc{\Large Universidade de São Paulo\\
     Instituto de Ciências Matemáticas e de Computação\\
@@ -93,9 +92,7 @@
     \newpage
 \end{center}
 
-
-\pagestyle{plain}
-
+\thispagestyle{plain} 
 \setcounter{page}{1}
 \setstretch{1.2}
 \newpage
@@ -142,12 +139,40 @@ pesquisar ofertas de seu interesse.
 	
 \section{Cronograma de Projeto}
 	\subsection{WBS}
-    	O WBS está representado na figura \ref{WBSimg} no apêndice \ref{apendice} deste documento.
-
+    	O WBS está representado na figura \ref{WBS} no apêndice \ref{apendice} deste documento.
 	\subsection{Rede PERT com caminho crítico}
-		O PERT está representado na figura \ref{PERT} no apêndice \ref{apendice} deste documento.
+		O WBS está representado na figura \ref{PERT} no apêndice \ref{apendice} deste documento.
 	\subsection{Tabela de alocação de recursos}
 	\subsection{Gráfico de Gannt}
+	\begin{figure}[!h]
+		\begin{center}
+
+			\begin{ganttchart}{1}{30}[
+			y unit title=0.4cm,
+    		y unit chart=0.5cm,
+    		bar height= 0.1]
+  				\gantttitlelist{1,...,30}{1} \\
+				\ganttbar{1.1.1.1}{1}{2} \\
+				\ganttbar{1.1.1.1}{3}{7} \\
+			\end{ganttchart}
+			\begin{ganttchart}{1}{30}
+  				\gantttitlelist{31,...,60}{1} \\
+				\ganttbar{1.1.1.1}{1}{2} \\
+				\ganttbar{1.1.1.1}{3}{7} \\
+			\end{ganttchart}
+			\begin{ganttchart}{1}{30}
+  				\gantttitlelist{61,...,90}{1} \\
+				\ganttbar{1.1.1.1}{1}{2} \\
+				\ganttbar{1.1.1.1}{3}{7} \\
+			\end{ganttchart}
+			\begin{ganttchart}{1}{30}
+  				\gantttitlelist{91,...,120}{1} \\
+				\ganttbar{1.1.1.1}{1}{2} \\
+				\ganttbar{1.1.1.1}{3}{7} \\
+			\end{ganttchart}
+		\end{center}
+		\caption{Gantt Chart}
+	\end{figure}
 	
 \section{Matriz de Riscos}
 	\begin{table}[H]
@@ -208,5 +233,12 @@ pesquisar ofertas de seu interesse.
         	\includegraphics[width=\textwidth,height=\dimexpr\textheight-3\baselineskip\relax,keepaspectratio]{engsoft_pert2.png}
         	\caption{Rede PERT-CPM}
      		\label{PERT}
+    	\end{figure}
+    	\begin{figure}[!H]
+    		\centering
+        	\includegraphics[width=\textwidth,height=\dimexpr\textheight-3\baselineskip\relax,keepaspectratio]{gannt.png}
+        	\caption{Gráfico Gannt}
+        	
+     		\label{gannt}
     	\end{figure}
 \end{document} 
