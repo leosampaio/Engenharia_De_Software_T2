@@ -30,6 +30,7 @@
 \usepackage[brazil]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{tabularx}
 
 
 \addtolength{\textwidth}{2cm}
@@ -87,7 +88,7 @@
     \newpage
 \end{center}
 
-\thispagestyle{plain} 
+\pagestyle{plain} 
 \setcounter{page}{1}
 \setstretch{1.2}
 \newpage
@@ -135,12 +136,52 @@ pesquisar ofertas de seu interesse.
 \section{Cronograma de Projeto}
 	\subsection{WBS}
     	O WBS está representado na figura \ref{WBS} no apêndice \ref{apendice} deste documento.
-	\subsection{Rede PERT com caminho crítico}
-		O WBS está representado na figura \ref{PERT} no apêndice \ref{apendice} deste documento.
-	\subsection{Tabela de alocação de recursos}
+	\subsection{Rede PERT com Caminho Crítico}
+		O PERT está representado na figura \ref{PERT} no apêndice \ref{apendice} deste documento.
+	\subsection{Tabela de Alocação de Recursos}
+	\begin{center}
+	\begin{table}[H]
+		\begin{tabularx}{\textwidth}{c|X|c|X|c}
+			\textbf{Ativ.} & \textbf{Descrição} & \textbf{Precedência} & \textbf{Recursos} & \textbf{Duração(dias)} \\
+			\hline
+			T1 & Projetar Entrevista & Não tem & Pessoas & 1\\ \hline
+			T2 & Entrevistar Usuário & 1 & Pessoas, Cliente & 3\\ \hline
+			T3 & Brainstorm & 1 & Pessoas & 1\\ \hline
+			T4 & Produzir documento de requisitos & 2, 3& Pessoas & 5\\ \hline
+			T5 & Validar documento & 4 & Pessoas, Cliente & 2\\ \hline
+			T6 & Elaboração do modelo conceitual& 5 & Ferramenta case UML & 4\\ \hline
+			T7 & Casos de uso & 5 & Ferramenta Case UML & 5 \\ \hline
+			T8 & Elaboração do protótipo V1& 5 & Designer, Ferramenta de prototipação & 5 \\ \hline
+			T9 & Elaboração de DSS & 7 & Ferramenta case UML& 5\\ \hline
+			T10 & Elaboração de contratos de operação& 9 & Pessoas & 3 \\ \hline
+			T11 & Projetar modularização & 9 & Arquiteto de Software, Ferramenta case UML & 7\\ \hline
+			T12 & Diagramas de comunicação & 10 & Ferramenta case UML & 10\\ \hline
+			T13 & Validar projeto & 11 & Pessoas, Cliente & 1\\ \hline
+			T14 & Teste de usabilidade com V1 & 8 & Pessoas & 3 \\ \hline
+			T15 & Validar modelos & 12 & Pessoas, Cliente & 2 \\ \hline
+			T16 & Pojeto do diagrama de classes & 13 & Ferramenta case UML & 7\\ \hline
+			T17 & Projeto conceitual com MER & 13, 15 & Analista de banco de dados & 3 \\ \hline
+			T18 & Alterações e validação do protótipo & 14 & Designer, Cliente, Pessoas & 2\\ \hline
+			T19 & Projeto lógico relacional & 17 & Analista de banco de dados & 2 \\ \hline
+			T20 & Projeto físico & 19 & Analista do banco de dados & 4\\ \hline
+			T21 & Implementação do projeto OO & 16, 20 & Desenvolvedores & 30 \\ \hline
+			T22 & Implementação do projeto físico de BD& 20 & Analista de banco de dados & 10\\ \hline
+			T23 & Implementação das interfaces & 18 & Desenvolvedores & 20\\ \hline
+			T24 & Integração do sistema& 21, 22, 23 & Desenvolvedores & 10\\ \hline
+			T25 & Teste de unidade & 24 & Tester & 5 \\ \hline
+			T26 & Teste de banco de dados & 24 & Tester & 3 \\ \hline
+			T27 & Teste de integração & 24 & Tester & 5\\ \hline
+			T28 & Teste de aceitação& 25, 26, 27 & Tester, Cliente & 2\\ \hline
+			T29 & Elaborar manual & 28 & Pessoas & 4\\ \hline
+			T30 & Treinamento dos administradores & 29 & Pessoas & 3\\ \hline
+		\end{tabularx}
+		\caption{Lista de Atividades / Precedência / Recursos e Duração}
+	\end{table}
+	\end{center}
 	\subsection{Gráfico de Gannt}
 	
 \section{Matriz de Riscos}
+	
 	\begin{table}[H]
 		\begin{tabular}{c|l|c|c|c}
 			\textbf{ID} & \multicolumn{1}{c|}{\textbf{Risco}} & \textbf{Categoria} & \textbf{Prob.(\%)} & \textbf{Impacto} \\
@@ -156,20 +197,22 @@ pesquisar ofertas de seu interesse.
 		\end{tabular}
 		\caption{Tabela de riscos\\Impactos: 1 - Crítico; 2 - Significativo; 3 - Marginal; 4 - Negligenciável}
 	\end{table}
-	
+
+	\begin{center}
 	\begin{table}[H]
-		\begin{tabular}{l|c|c|c|c|}
+		\begin{tabularx}{\textwidth}{l|X|X|X|X|}
 										& Negligenciável		& Mariginal				& Significativo			& Crítico \\ \hline
 			Frequente (75$\sim$100\%) 	& \cellcolor{yellow}	& \cellcolor{red}		& \cellcolor{red}		& \cellcolor{red} \\ \hline
 			Provável (50$\sim$75\%)		&						& \cellcolor{yellow}	& \cellcolor{red} 1, 5	& \cellcolor{red} \\ \hline
 			Ocasional (25$\sim$50\%)	&  						& 2, 3					& \cellcolor{yellow} 7	& \cellcolor{red} 8 \\ \hline
 			Improvável (0$\sim$25\%)	& 6						&						& 4						& \cellcolor{yellow} \\ \hline
-		\end{tabular}
+		\end{tabularx}
 		\caption{Matriz de riscos mapeados}
 	\end{table}
-
+	
+	\end{center}
 	\begin{table}[H]
-		\begin{tabular}{c|p{.2\textwidth}|p{.25\textwidth}|p{.25\textwidth}|p{.2\textwidth}}
+		\begin{tabularx}{\textwidth}{c|X|X|X|X}
 			\textbf{ID} & \multicolumn{1}{c|}{\textbf{Descrição}} & \multicolumn{1}{c|}{\textbf{Mitigação}} & \multicolumn{1}{c|}{\textbf{Resposta}} & \multicolumn{1}{c}{\textbf{Impacto}} \\
 			\hline
 			1 & Estimativa de tamanho baixa & Ter tolerância no cronograma & Estimar tempo acima para produção & Atraso na produção do sistema \\ \hline
@@ -180,10 +223,9 @@ pesquisar ofertas de seu interesse.
 			6 & Ausência na participação do cliente & Ter maior comunicação com o cliente & Procurar o cliente mais & Produto incompatível com expectativas do cliente \\ \hline
 			7 & Cliente resistente a mudanças & Comunicação com cliente & Negociar mudanças suaves com cliente & Atraso na produção do sistema \\ \hline
 			8 & Hardware servidor fornecido inadequado & Ter um hardware adequado & Negociar o hardware oferecido com o cliente & Tempo de resposta prejudicado \\
-		\end{tabular}
+		\end{tabularx}
 		\caption{Tabela de mitigação de Riscos}
 	\end{table}
-
 
 \section{Conclusão}
 
