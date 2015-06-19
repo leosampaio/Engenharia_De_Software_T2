@@ -531,18 +531,269 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 \section{Testes}
 	\begin{center}
 	\begin{table}[H]
-		\begin{tabularx}{\textwidth}{c|X|c|X|c}
-			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
+		\begin{tabularx}{\textwidth}{c|X|X|X|X}
+			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Opinião} & \textbf{Avaliação} & \textbf{Saída Esperada} \\
 			\hline
 			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
-			2 & Sequência A1 -     Opinião inválida & Formato Inválido & Formato Válido & Opinião não alterada\\ \hline
-			3 & Sequência A2 -     Avaliação inválida & Formato Válido & Formato Inválido & Opinião não alterada\\ \hline
+			2 & Sequência A1 - Opinião inválida & Formato Inválido & Formato Válido & Opinião não alterada\\ \hline
+			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Opinião não alterada\\ \hline
 			
 		\end{tabularx}
 		\caption{Teste Caso de Uso Gerênciar Opiniões}
 	\end{table}
 	\end{center}
-
+	
+	\begin{center}
+	\begin{table}[H]
+		\begin{tabularx}{\textwidth}{c|X|X|X}
+			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Busca} & \textbf{Saída Esperada} \\
+			\hline
+			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Busca realizada\\ \hline
+			2 & Sequência A1 - Busca inválida & Formato Inválido & Busca não alterada\\ \hline
+			
+		\end{tabularx}
+		\caption{Teste Caso de Uso Buscar Jogos}
+	\end{table}
+	\end{center}
+	
+	\begin{center}
+	\begin{table}[H]
+		\begin{tabularx}{\textwidth}{c|X|X|X|X|X|X}
+			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Nome} & \textbf{Nascimento} & \textbf{Senha} & \textbf{Confirmação Senha} & \textbf{Saída Esperada} \\
+			\hline
+			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Formato Válido & Formato Válido & Opinião alterada\\ \hline
+			2 & Sequência A1 - Opinião inválida & Formato Inválido & Formato Válido & Formato Inválido & Formato Inválido & Opinião não alterada\\ \hline
+			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Formato Inválido & Formato Inválido & Opinião não alterada\\ \hline
+			
+		\end{tabularx}
+		\caption{Teste Caso de Uso Incluir Usuários}
+	\end{table}
+	\end{center}
+	
+	\begin{center}
+	\begin{table}[H]
+		\begin{tabularx}{\textwidth}{c|X|X|X}
+			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{CNPJ} & \textbf{Saída Esperada} \\
+			\hline
+			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Opinião alterada\\ \hline
+			2 & Sequência A1 - Opinião inválida & Formato Inválido & Opinião não alterada\\ \hline
+			3 & Sequência A2 - Avaliação inválida & Formato Válido & Opinião não alterada\\ \hline
+			
+		\end{tabularx}
+		\caption{Teste Caso de Uso Cadastrar CNPJ}
+	\end{table}
+	\end{center}
+	
+	\begin{center}
+	\begin{table}[H]
+		\begin{tabularx}{\textwidth}{c|X|X|X|X}
+			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Nome} & \textbf{Descrição} & \textbf{Saída Esperada} \\
+			\hline
+			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
+			2 & Sequência A1 - Opinião inválida & Formato Inválido & Formato Válido & Opinião não alterada\\ \hline
+			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Opinião não alterada\\ \hline
+			
+		\end{tabularx}
+		\caption{Teste Caso de Uso Incluir Jogo}
+	\end{table}
+	\end{center}
+	
+	\begin{center}
+	\begin{table}[H]
+		\begin{tabularx}{\textwidth}{c|X|X|X|X}
+			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Senha Antiga} & \textbf{Senha Nova} & \textbf{Confirmação Senha Nova} & \textbf{Saída Esperada} \\
+			\hline
+			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
+			2 & Sequência A1 - Opinião inválida & Formato Inválido & Formato Válido & Opinião não alterada\\ \hline
+			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Opinião não alterada\\ \hline
+			
+		\end{tabularx}
+		\caption{Teste Caso de Uso Alterar Senha}
+	\end{table}
+	\end{center}
+	
+	\begin{center}
+	\begin{table}[H]
+		\begin{tabularx}{\textwidth}{c|X|X|X|X}
+			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{E-mail} & \textbf{Senha} & \textbf{Saída Esperada} \\
+			\hline
+			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
+			2 & Sequência A1 - Opinião inválida & Formato Inválido & Formato Válido & Opinião não alterada\\ \hline
+			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Opinião não alterada\\ \hline
+			
+		\end{tabularx}
+		\caption{Teste Caso de Uso Efetuar Login}
+	\end{table}
+	\end{center}
+	
+	\begin{center}
+	\begin{table}[H]
+		\begin{tabularx}{\textwidth}{c|X|X|X|X}
+			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
+			\hline
+			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
+			2 & Sequência A1 - Opinião inválida & Formato Inválido & Formato Válido & Opinião não alterada\\ \hline
+			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Opinião não alterada\\ \hline
+			
+		\end{tabularx}
+		\caption{Teste Caso de Uso Gerenciar Interesse}
+	\end{table}
+	\end{center}
+	
+	\begin{center}
+	\begin{table}[H]
+		\begin{tabularx}{\textwidth}{c|X|X|X|X}
+			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
+			\hline
+			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
+			2 & Sequência A1 - Opinião inválida & Formato Inválido & Formato Válido & Opinião não alterada\\ \hline
+			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Opinião não alterada\\ \hline
+			
+		\end{tabularx}
+		\caption{Teste Caso de Uso Gerenciar Oferta}
+	\end{table}
+	\end{center}
+	
+	\begin{center}
+	\begin{table}[H]
+		\begin{tabularx}{\textwidth}{c|X|X|X|X}
+			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
+			\hline
+			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
+			2 & Sequência A1 - Opinião inválida & Formato Inválido & Formato Válido & Opinião não alterada\\ \hline
+			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Opinião não alterada\\ \hline
+			
+		\end{tabularx}
+		\caption{Teste Caso de Uso Realizar Venda}
+	\end{table}
+	\end{center}
+	
+	\begin{center}
+	\begin{table}[H]
+		\begin{tabularx}{\textwidth}{c|X|X|X|X}
+			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
+			\hline
+			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
+			2 & Sequência A1 - Opinião inválida & Formato Inválido & Formato Válido & Opinião não alterada\\ \hline
+			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Opinião não alterada\\ \hline
+			
+		\end{tabularx}
+		\caption{Teste Caso de Uso Controlar Transação Financeira}
+	\end{table}
+	\end{center}
+	
+	\begin{center}
+	\begin{table}[H]
+		\begin{tabularx}{\textwidth}{c|X|X|X|X}
+			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
+			\hline
+			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
+			2 & Sequência A1 - Opinião inválida & Formato Inválido & Formato Válido & Opinião não alterada\\ \hline
+			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Opinião não alterada\\ \hline
+			
+		\end{tabularx}
+		\caption{Teste Caso de Uso Realizar Troca}
+	\end{table}
+	\end{center}
+	
+	\begin{center}
+	\begin{table}[H]
+		\begin{tabularx}{\textwidth}{c|X|X|X|X}
+			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
+			\hline
+			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
+			2 & Sequência A1 - Opinião inválida & Formato Inválido & Formato Válido & Opinião não alterada\\ \hline
+			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Opinião não alterada\\ \hline
+			
+		\end{tabularx}
+		\caption{Teste Caso de Uso Alterar estado da oferta}
+	\end{table}
+	\end{center}
+	
+	\begin{center}
+	\begin{table}[H]
+		\begin{tabularx}{\textwidth}{c|X|X|X|X}
+			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
+			\hline
+			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
+			2 & Sequência A1 - Opinião inválida & Formato Inválido & Formato Válido & Opinião não alterada\\ \hline
+			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Opinião não alterada\\ \hline
+			
+		\end{tabularx}
+		\caption{Teste Caso de Uso Avaliar transação de compra/troca}
+	\end{table}
+	\end{center}
+	
+	\begin{center}
+	\begin{table}[H]
+		\begin{tabularx}{\textwidth}{c|X|X|X|X}
+			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
+			\hline
+			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
+			2 & Sequência A1 - Opinião inválida & Formato Inválido & Formato Válido & Opinião não alterada\\ \hline
+			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Opinião não alterada\\ \hline
+			
+		\end{tabularx}
+		\caption{Teste Caso de Uso Realizar Backups do Banco de Dados}
+	\end{table}
+	\end{center}
+	
+	\begin{center}
+	\begin{table}[H]
+		\begin{tabularx}{\textwidth}{c|X|X|X|X}
+			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
+			\hline
+			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
+			2 & Sequência A1 - Opinião inválida & Formato Inválido & Formato Válido & Opinião não alterada\\ \hline
+			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Opinião não alterada\\ \hline
+			
+		\end{tabularx}
+		\caption{Teste Caso de Uso Acessar Relatórios}
+	\end{table}
+	\end{center}
+	
+	\begin{center}
+	\begin{table}[H]
+		\begin{tabularx}{\textwidth}{c|X|X|X|X}
+			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
+			\hline
+			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
+			2 & Sequência A1 - Opinião inválida & Formato Inválido & Formato Válido & Opinião não alterada\\ \hline
+			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Opinião não alterada\\ \hline
+			
+		\end{tabularx}
+		\caption{Teste Caso de Uso Verificar Cadastro de Jogo}
+	\end{table}
+	\end{center}
+	
+	\begin{center}
+	\begin{table}[H]
+		\begin{tabularx}{\textwidth}{c|X|X|X|X}
+			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
+			\hline
+			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
+			2 & Sequência A1 - Opinião inválida & Formato Inválido & Formato Válido & Opinião não alterada\\ \hline
+			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Opinião não alterada\\ \hline
+			
+		\end{tabularx}
+		\caption{Teste Caso de Uso Gerenciar Propagandas}
+	\end{table}
+	\end{center}
+	
+	\begin{center}
+	\begin{table}[H]
+		\begin{tabularx}{\textwidth}{c|X|X|X|X}
+			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
+			\hline
+			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
+			2 & Sequência A1 - Opinião inválida & Formato Inválido & Formato Válido & Opinião não alterada\\ \hline
+			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Opinião não alterada\\ \hline
+			
+		\end{tabularx}
+		\caption{Teste Caso de Uso AcessarRrelatório de Vendas}
+	\end{table}
+	\end{center}	
+	
 \section{Projeto de Interface}
 
 O projeto de interface levou em consideração as principais interações usuário sistema, sendo estes a página inicial (figura \ref{home}), o cadastro e login de usuário (figuras \ref{cadastro} e \ref{login}), busca de jogos (figura \ref{busca}) e venda/troca de jogos (figura \ref{detalhe}).
