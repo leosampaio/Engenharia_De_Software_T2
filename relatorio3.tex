@@ -122,20 +122,23 @@ da página de um jogo específico ou dentro de sua página de perfil. Alteraçõ
 feitas à opinião. Ao sair, as alterações serão salvas.  \\ \hline
 			\textbf{Tipo} &  Secundário e não essencial\\ \hline
 			\textbf{Referências Cruzadas} &  R11 \\ \hline
+			
 			\textbf{Sequência Típica} & 
 			\begin{enumerate}
-			\item O usário acessou informações de um jogo e clica no botão de gerenciar opiniões sobre o jogo.
-			\item O sistema exibe uma tela onde o usuário pode cadastrar uma opinião, atualizar uma opinião cadastrada por ele ou apagar opinião caso já cadastrada.
-			\item O usuário realiza o cadastro da opinião e clica em salvar.
-			\item O sistema informa ao usuário que sua opinião foi cadastrada.
+				\item O usário acessou informações de um jogo e clica no botão de gerenciar opiniões sobre o jogo.
+				\item O sistema exibe uma tela onde o usuário pode cadastrar uma opinião, atualizar uma opinião cadastrada por ele ou apagar opinião caso já cadastrada.
+				\item O usuário realiza o cadastro da opinião e clica em salvar.
+				\item O sistema informa ao usuário que sua opinião foi cadastrada.
 			\end{enumerate} \\ \hline
+			
 			\textbf{Sequências Alternativas} & 
-			\begin{enumerate}
-			\item O usuário realiza o cadastro da opinião e clica em salvar.
-			\begin{enumerate}
-			\item O sistema informa ao usuário que ele não pode cadastrar opinições porque foi bloquear por ter pendências no sistema.
-			\end{enumerate}
-			\end{enumerate} \\ \hline
+			\begin{itemize}
+				\item [3.] O usuário realiza o cadastro da opinião e clica em salvar.
+				\begin{itemize}
+					\item [3.1] O sistema informa ao usuário que ele não pode cadastrar opinições porque foi bloquear por ter pendências no sistema.
+				\end{itemize}
+			\end{itemize} \\ \hline
+			
 		\end{tabularx}
 \end{table}
 
@@ -168,24 +171,21 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 			
 			\textbf{Sequências Alternativas} & 
 						
-			\begin{enumerate}
-			\item O usuário escreve um nome na barra de busca e pressiona o botão de busca.
-			\begin{enumerate}
-			\item O sistema exibe a mensagem: nenhum jogo cadastrado com o nome digitado.
-			\end{enumerate}
-			
-			\item O usuário filtra a busca por uma região desejada.												\begin{enumerate}
-			\item O sistema exibe a mensagem: nenhum jogo cadastrado na região desejada.
-			\end{enumerate}
-			
-			\item O usuário filtra a busca por título, descrição, gênero, plataformas ou região do jogo e também por classificação de idade.
-			\begin{enumerate}
-			\item O sistema exibe a mensagem: nenhum jogo cadastrado com as informações desejadas.
-			\end{enumerate}
-			
-			
-			\end{enumerate} \\ \hline
-			
+			\begin{itemize}
+				\item[1.] O usuário escreve um nome na barra de busca e pressiona o botão de busca.
+				\begin{itemize}
+					\item[1.1.] O sistema exibe a mensagem: nenhum jogo cadastrado com o nome digitado.
+				\end{itemize}
+				
+				\item[3.] O usuário filtra a busca por uma região desejada.											\begin{itemize}
+					\item[3.1.] O sistema exibe a mensagem: nenhum jogo cadastrado na região desejada.
+				\end{itemize}
+				
+				\item[5.] O usuário filtra a busca por título, descrição, gênero, plataformas ou região do jogo e também por classificação de idade.
+				\begin{itemize}
+					\item[5.1.] O sistema exibe a mensagem: nenhum jogo cadastrado com as informações desejadas.
+				\end{itemize}
+			\end{itemize} \\ \hline
 			
 		\end{tabularx}
 \end{table}
@@ -211,13 +211,12 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 			\end{enumerate} \\ \hline
 			
 			\textbf{Sequências Alternativas} & 
-			\begin{enumerate}
-			\item O usuário informa o CNPJ e a razão social e clica em concluir.
-			\begin{enumerate}
-			\item O sistema permance na mesma tela e informa ao usuário que seus dados de cadastro estão incorretos.
-			\end{enumerate}
-			
-			\end{enumerate} \\ \hline
+			\begin{itemize}
+				\item[5.] O usuário informa o CNPJ e a razão social e clica em concluir.
+				\begin{itemize}
+					\item[5.1.] O sistema permance na mesma tela e informa ao usuário que seus dados de cadastro estão incorretos.
+				\end{itemize}
+			\end{itemize} \\ \hline
 		\end{tabularx}
 \end{table}
 
@@ -240,13 +239,12 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 			
 			\end{enumerate} \\ \hline
 			\textbf{Sequências Alternativas} & 
-			\begin{enumerate}
-			\item O usuário informa os campos: título, descrição, gênero, plataformas ou região do jogo e também a classificação de idade e clica em salvar.
-			\begin{enumerate}
-			\item O sistema permanece na mesma tela e exibe a mensagem de dados inválidos.
-			\item Caso de Uso: verificar cadastro de jogo.
-			\end{enumerate}
-			\end{enumerate} \\ \hline
+			\begin{itemize}
+				\item[3.] O usuário informa os campos: título, descrição, gênero, plataformas ou região do jogo e também a classificação de idade e clica em salvar.
+				\begin{itemize}
+					\item[3.1.] O sistema permanece na mesma tela e exibe a mensagem de dados inválidos.
+				\end{itemize}
+			\end{itemize} \\ \hline
 		\end{tabularx}
 \end{table}
 
@@ -268,25 +266,23 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 			\item O usuário informa a senha antiga, a nova senha e clica em salvar.
 			\item O sistema exibe uma mensagem de senha alterada com sucesso.
 			\end{enumerate} \\ \hline
+			
 			\textbf{Sequências Alternativas} & 
-			\begin{enumerate}
-			\item O sistema exibe campos para fazer alterção de senha.
-			\begin{enumerate}
-			\item O usuário não lembra a senha antiga e desiste de fazer a alterção.
-			\end{enumerate}
-			\item O usuário informa a senha antiga, a nova senha e clica em salvar.			
+			\begin{itemize}
+				\item[4.] O sistema exibe campos para fazer alteração de senha.
+				\begin{itemize}
+					\item[4.1.] O usuário não lembra a senha antiga e desiste de fazer a alterção.
+				\end{itemize}
+				\item[5.] O usuário informa a senha antiga, a nova senha e clica em salvar.			
+				\begin{itemize}
+					\item[5.1.] O sistema exibe uma mensagem que a senha antiga está incorreta.
+				\end{itemize}
+				\item[5.] O usuário informa a senha antiga, a nova senha e clica em salvar.			
+				\begin{itemize}
+					\item[5.1.] O sistema exibe uma mensagem informando que a nova senha é inválida.
+			\end{itemize}			
 			
-			\begin{enumerate}
-			\item O sistema exibe uma mensagem que a senha antiga está incorreta.
-			\end{enumerate}
-			
-			\item O usuário informa a senha antiga, a nova senha e clica em salvar.			
-			
-			\begin{enumerate}
-			\item O sistema exibe uma mensagem informando que a nova senha é inválida.
-			\end{enumerate}			
-			
-			\end{enumerate} \\ \hline
+			\end{itemize} \\ \hline
 		\end{tabularx}
 \end{table}
 
@@ -306,13 +302,14 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 			\item O usuário preenche os campos com seu login e senha e clica em acessar.
 			\item O sistema é redirecionado para a página inicial do usuário.
 			\end{enumerate} \\ \hline
+			
 			\textbf{Sequências Alternativas} & 
-			\begin{enumerate}
-			\item O usuário preenche os campos com seu login e senha e clica em acessar.
-			\begin{enumerate}
-			\item O sistema informa que o perfil do usário não foi encontrado.
-			\end{enumerate}
-			\end{enumerate} \\ \hline
+			\begin{itemize}
+				\item[3.] O usuário preenche os campos com seu login e senha e clica em acessar.
+				\begin{itemize}
+					\item[3.1.] O sistema informa que o perfil do usário não foi encontrado.
+				\end{itemize}
+			\end{itemize} \\ \hline
 		\end{tabularx}
 \end{table}
 
@@ -334,13 +331,14 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 			\item O usuário informa o novo interesse e salva as alterações.
 			\item O sistema exibe a mensagem de interesses atualizados com sucesso.
 			\end{enumerate} \\ \hline
+			
 			\textbf{Sequências Alternativas} & 
-			\begin{enumerate}
-			\item O sistema exibe uma tela onde o usuário pode alterar as informações de interesse.
-			\begin{enumerate}
-			\item O usuário desiste de gerenciar os interesses e cancela a operação.
-			\end{enumerate}
-			\end{enumerate} \\ \hline
+			\begin{itemize}
+				\item[2.] O sistema exibe uma tela onde o usuário pode alterar as informações de interesse.
+				\begin{itemize}
+					\item[2.1.] O usuário desiste de gerenciar os interesses e cancela a operação.
+				\end{itemize}
+			\end{itemize} \\ \hline
 		\end{tabularx}
 \end{table}
 
@@ -362,17 +360,18 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 			\item O usuário preenche as informações sobre a nova oferta e clica em salvar.
 			\item O sistema exibe a mensagem de dados cadastrados com sucesso.
 			\end{enumerate} \\ \hline
+			
 			\textbf{Sequências Alternativas} & 
-			\begin{enumerate}
-			\item O sistema exibe as ofertas cadastras pelo usuário.
-			\begin{enumerate}
-			\item O usuário cancela a operação.
-			\end{enumerate}
-			\item O usuário clica no botão de cadastro de nova oferta.			
-			\begin{enumerate}
-			\item O sistema permanece na mesma tela e exibe uma mensagem de dados inválidos.
-			\end{enumerate}
-			\end{enumerate} \\ \hline
+			\begin{itemize}
+				\item[2.] O sistema exibe as ofertas cadastras pelo usuário.
+				\begin{itemize}
+					\item[2.1.] O usuário cancela a operação.
+				\end{itemize}
+				\item[3.] O usuário clica no botão de cadastro de nova oferta.			
+				\begin{itemize}
+					\item[3.1.] O sistema permanece na mesma tela e exibe uma mensagem de dados inválidos.
+				\end{itemize}
+			\end{itemize} \\ \hline
 		\end{tabularx}
 \end{table}
 
@@ -389,13 +388,14 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 			\begin{enumerate}
 			\item Ter tolerância no cronograma
 			\end{enumerate} \\ \hline
+			
 			\textbf{Sequências Alternativas} & 
-			\begin{enumerate}
-			\item Ter tolerância no cronograma
-			\begin{enumerate}
-			\item Ter tolerância no cronograma
-			\end{enumerate}
-			\end{enumerate} \\ \hline
+			\begin{itemize}
+				\item[2.] Ter tolerância no cronograma
+				\begin{itemize}
+					\item[2.1.] Ter tolerância no cronograma
+				\end{itemize}
+			\end{itemize} \\ \hline
 		\end{tabularx}
 \end{table}
 
@@ -412,13 +412,14 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 			\begin{enumerate}
 			\item Ter tolerância no cronograma
 			\end{enumerate} \\ \hline
+			
 			\textbf{Sequências Alternativas} & 
-			\begin{enumerate}
-			\item Ter tolerância no cronograma
-			\begin{enumerate}
-			\item Ter tolerância no cronograma
-			\end{enumerate}
-			\end{enumerate} \\ \hline
+			\begin{itemize}
+				\item[2.] Ter tolerância no cronograma
+				\begin{itemize}
+					\item[2.1.] Ter tolerância no cronograma
+				\end{itemize}
+			\end{itemize} \\ \hline
 		\end{tabularx}
 \end{table}
 
@@ -435,13 +436,14 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 			\begin{enumerate}
 			\item Ter tolerância no cronograma
 			\end{enumerate} \\ \hline
+			
 			\textbf{Sequências Alternativas} & 
-			\begin{enumerate}
-			\item Ter tolerância no cronograma
-			\begin{enumerate}
-			\item Ter tolerância no cronograma
-			\end{enumerate}
-			\end{enumerate} \\ \hline
+			\begin{itemize}
+				\item[2.] Ter tolerância no cronograma
+				\begin{itemize}
+					\item[2.1.] Ter tolerância no cronograma
+				\end{itemize}
+			\end{itemize} \\ \hline
 		\end{tabularx}
 \end{table}
 
@@ -458,13 +460,14 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 			\begin{enumerate}
 			\item Ter tolerância no cronograma
 			\end{enumerate} \\ \hline
+			
 			\textbf{Sequências Alternativas} & 
-			\begin{enumerate}
-			\item Ter tolerância no cronograma
-			\begin{enumerate}
-			\item Ter tolerância no cronograma
-			\end{enumerate}
-			\end{enumerate} \\ \hline
+			\begin{itemize}
+				\item[2.] Ter tolerância no cronograma
+				\begin{itemize}
+					\item[2.1.] Ter tolerância no cronograma
+				\end{itemize}
+			\end{itemize} \\ \hline
 		\end{tabularx}
 \end{table}
 
@@ -481,13 +484,14 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 			\begin{enumerate}
 			\item Ter tolerância no cronograma
 			\end{enumerate} \\ \hline
+			\
 			\textbf{Sequências Alternativas} & 
-			\begin{enumerate}
-			\item Ter tolerância no cronograma
-			\begin{enumerate}
-			\item Ter tolerância no cronograma
-			\end{enumerate}
-			\end{enumerate} \\ \hline
+			\begin{itemize}
+				\item[2.] Ter tolerância no cronograma
+				\begin{itemize}
+					\item[2.1.] Ter tolerância no cronograma
+				\end{itemize}
+			\end{itemize} \\ \hline
 		\end{tabularx}
 \end{table}
 
@@ -507,15 +511,15 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 			\item O administrador escolhe o tipo do backup e clica no botão realizar backup do sistema.
 			\item O sistema exibe uma mensagem de backup realizado com sucesso e disponibiliza o arquivo com o backup.
 			\item O administrador faz o download do arquivo e finaliza a operação.
+			\end{enumerate} \\ \hline
 			
-			\end{enumerate} \\ \hline
 			\textbf{Sequências Alternativas} & 
-			\begin{enumerate}
-			\item O sistema exibe uma tela onde o administrador pode escolher o tipo de backup desejado.
-			\begin{enumerate}
-			\item O administrador desiste de fazer o backup e cancela a operação.
-			\end{enumerate}
-			\end{enumerate} \\ \hline
+			\begin{itemize}
+				\item[2.] O sistema exibe uma tela onde o administrador pode escolher o tipo de backup desejado.
+				\begin{itemize}
+					\item[2.1.] O administrador desiste de fazer o backup e cancela a operação.
+				\end{itemize}
+			\end{itemize} \\ \hline
 		\end{tabularx}
 \end{table}
 
@@ -536,13 +540,14 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 			\item O sistema exibe uma tela com o relatório escolhido e disponibiliza a opção de impressão.
 			\item O sistema salva informações do último relatóro gerado
 			\end{enumerate} \\ \hline
+			
 			\textbf{Sequências Alternativas} & 
-			\begin{enumerate}
-			\item O sistema exibe a tela de acesso aos relatórios.
-			\begin{enumerate}
-			\item administrador cancela a operação.
-			\end{enumerate}
-			\end{enumerate} \\ \hline
+			\begin{itemize}
+				\item[2.] O sistema exibe a tela de acesso aos relatórios.
+				\begin{itemize}
+					\item[2.1.] administrador cancela a operação.
+				\end{itemize}
+			\end{itemize} \\ \hline
 		\end{tabularx}
 \end{table}
 
@@ -562,17 +567,17 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 			\item O administrador aceita a nova solicitação de cadastro.
 			\item O sistema informa ao administrador que sua avalização foi efetuada com sucesso.
 			\item O sistema envia uma mensagem para o usuário que fez o cadastro do jogo relatando a decisão do administrador.
+			\end{enumerate} \\ \hline
 			
-			\end{enumerate} \\ \hline
 			\textbf{Sequências Alternativas} & 
-			\begin{enumerate}
-			\item O sistema exibe uma tela com as informações do jogo que deseja ser cadastrado e as opções de aceitar ou recusar.
-			\begin{enumerate}
-			\item O administrador recusa o novo cadastro.
-			\item O sistema informa ao administrador que sua avalização foi efetuada com sucesso.
-			\item O sistema envia uma mensagem para o usuário que fez o cadastro do jogo relatando a decisão do administrador.
-			\end{enumerate}
-			\end{enumerate} \\ \hline
+			\begin{itemize}
+				\item[4.] O sistema exibe uma tela com as informações do jogo que deseja ser cadastrado e as opções de aceitar ou recusar.
+				\begin{itemize}
+					\item[4.1.] O administrador recusa o novo cadastro.
+					\item[4.2.] O sistema informa ao administrador que sua avalização foi efetuada com sucesso.
+					\item[4.3.] O sistema envia uma mensagem para o usuário que fez o cadastro do jogo relatando a decisão do administrador.
+				\end{itemize}
+			\end{itemize} \\ \hline
 		\end{tabularx}
 \end{table}
 
@@ -594,13 +599,14 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 			\item O patrocinador preenche todas as informações, concorda com os termos de uso e salva as alterações.
 			\item O sistema exibe uma mensagem que o cadastro de propaganda foi realizado com sucesso.
 			\end{enumerate} \\ \hline
+			
 			\textbf{Sequências Alternativas} & 
-			\begin{enumerate}
-			\item O sistema exibe a tela com as informações para a propaganda e as condições de cadastro.
-			\begin{enumerate}
-			\item O patrocinador desiste de fazer o cadastro e cancela a operação.
-			\end{enumerate}
-			\end{enumerate} \\ \hline
+			\begin{itemize}
+				\item[4.] O sistema exibe a tela com as informações para a propaganda e as condições de cadastro.
+				\begin{itemize}
+					\item[4.1.] O patrocinador desiste de fazer o cadastro e cancela a operação.
+				\end{itemize}
+			\end{itemize} \\ \hline
 		\end{tabularx}
 \end{table}
 
@@ -620,20 +626,21 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 			\item O patrocinador informa o período que deseja gerar o relatório e clicar em gerar.
 			\item O sistema exibe o relatório de vendas para o período informado pelo patrocinador.
 			\end{enumerate} \\ \hline
+			
 			\textbf{Sequências Alternativas} & 
-			\begin{enumerate}
-			\item O patrocinador informa o período que deseja gerar o relatório e clicar em gerar.
-			\begin{enumerate}
-			\item O sistema informa que o período desejado é inválido.
-			\end{enumerate}
-			\end{enumerate} \\ \hline
+			\begin{itemize}
+				\item[3.] O patrocinador informa o período que deseja gerar o relatório e clicar em gerar.
+				\begin{itemize}
+					\item[3.1.] O sistema informa que o período desejado é inválido.
+				\end{itemize}
+			\end{itemize} \\ \hline
 		\end{tabularx}
 \end{table}
 
 \section{Testes}
 	\begin{center}
 	\begin{table}[H]
-		\begin{tabularx}{\textwidth}{c|X|X|X|X}
+		\begin{tabularx}{\textwidth}{|c|X|X|X|X|} \hline
 			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Opinião} & \textbf{Avaliação} & \textbf{Saída Esperada} \\
 			\hline
 			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
@@ -647,7 +654,7 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 	
 	\begin{center}
 	\begin{table}[H]
-		\begin{tabularx}{\textwidth}{c|X|X|X}
+		\begin{tabularx}{\textwidth}{|c|X|X|X|} \hline
 			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Busca} & \textbf{Saída Esperada} \\
 			\hline
 			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Busca realizada\\ \hline
@@ -660,7 +667,7 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 	
 	\begin{center}
 	\begin{table}[H]
-		\begin{tabularx}{\textwidth}{c|X|X|X|X|X|X}
+		\begin{tabularx}{\textwidth}{|c|X|X|X|X|X|X|} \hline
 			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Nome} & \textbf{Nascimento} & \textbf{Senha} & \textbf{Confirmação Senha} & \textbf{Saída Esperada} \\
 			\hline
 			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Formato Válido & Formato Válido & Opinião alterada\\ \hline
@@ -674,7 +681,7 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 	
 	\begin{center}
 	\begin{table}[H]
-		\begin{tabularx}{\textwidth}{c|X|X|X}
+		\begin{tabularx}{\textwidth}{|c|X|X|X|} \hline
 			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{CNPJ} & \textbf{Saída Esperada} \\
 			\hline
 			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Opinião alterada\\ \hline
@@ -688,7 +695,7 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 	
 	\begin{center}
 	\begin{table}[H]
-		\begin{tabularx}{\textwidth}{c|X|X|X|X}
+		\begin{tabularx}{\textwidth}{|c|X|X|X|X|} \hline
 			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Nome} & \textbf{Descrição} & \textbf{Saída Esperada} \\
 			\hline
 			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
@@ -702,12 +709,11 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 	
 	\begin{center}
 	\begin{table}[H]
-		\begin{tabularx}{\textwidth}{c|X|X|X|X|X}
-			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Senha Antiga} & \textbf{Senha Nova} & \textbf{Confirmação Senha Nova} & \textbf{Saída Esperada} \\
-			\hline
-			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
-			2 & Sequência A1 - Opinião inválida & Formato Inválido & Formato Válido & Opinião não alterada\\ \hline
-			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Opinião não alterada\\ \hline
+		\begin{tabularx}{\textwidth}{|c|X|X|X|X|X|} \hline
+			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Senha Antiga} & \textbf{Senha Nova} & \textbf{Confirmação Senha Nova} & \textbf{Saída Esperada} \\ \hline
+			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada & Saida \\ \hline
+			2 & Sequência A1 - Opinião inválida & Formato Inválido & Formato Válido & Opinião não alterada & Saida \\ \hline
+			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Opinião não alterada & Saida \\ \hline
 			
 		\end{tabularx}
 		\caption{Teste Caso de Uso Alterar Senha}
@@ -716,7 +722,7 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 	
 	\begin{center}
 	\begin{table}[H]
-		\begin{tabularx}{\textwidth}{c|X|X|X|X}
+		\begin{tabularx}{\textwidth}{|c|X|X|X|X|} \hline
 			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{E-mail} & \textbf{Senha} & \textbf{Saída Esperada} \\
 			\hline
 			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
@@ -730,7 +736,7 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 	
 	\begin{center}
 	\begin{table}[H]
-		\begin{tabularx}{\textwidth}{c|X|X|X|X}
+		\begin{tabularx}{\textwidth}{|c|X|X|X|X|} \hline
 			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
 			\hline
 			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
@@ -744,7 +750,7 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 	
 	\begin{center}
 	\begin{table}[H]
-		\begin{tabularx}{\textwidth}{c|X|X|X|X}
+		\begin{tabularx}{\textwidth}{|c|X|X|X|X|} \hline
 			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
 			\hline
 			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
@@ -758,7 +764,7 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 	
 	\begin{center}
 	\begin{table}[H]
-		\begin{tabularx}{\textwidth}{c|X|X|X|X}
+		\begin{tabularx}{\textwidth}{|c|X|X|X|X|} \hline
 			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
 			\hline
 			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
@@ -772,7 +778,7 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 	
 	\begin{center}
 	\begin{table}[H]
-		\begin{tabularx}{\textwidth}{c|X|X|X|X}
+		\begin{tabularx}{\textwidth}{|c|X|X|X|X|} \hline
 			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
 			\hline
 			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
@@ -786,7 +792,7 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 	
 	\begin{center}
 	\begin{table}[H]
-		\begin{tabularx}{\textwidth}{c|X|X|X|X}
+		\begin{tabularx}{\textwidth}{|c|X|X|X|X|} \hline
 			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
 			\hline
 			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
@@ -800,7 +806,7 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 	
 	\begin{center}
 	\begin{table}[H]
-		\begin{tabularx}{\textwidth}{c|X|X|X|X}
+		\begin{tabularx}{\textwidth}{|c|X|X|X|X|} \hline
 			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
 			\hline
 			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
@@ -814,7 +820,7 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 	
 	\begin{center}
 	\begin{table}[H]
-		\begin{tabularx}{\textwidth}{c|X|X|X|X}
+		\begin{tabularx}{\textwidth}{|c|X|X|X|X|} \hline
 			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
 			\hline
 			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
@@ -828,7 +834,7 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 	
 	\begin{center}
 	\begin{table}[H]
-		\begin{tabularx}{\textwidth}{c|X|X|X|X}
+		\begin{tabularx}{\textwidth}{|c|X|X|X|X|} \hline
 			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
 			\hline
 			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
@@ -842,7 +848,7 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 	
 	\begin{center}
 	\begin{table}[H]
-		\begin{tabularx}{\textwidth}{c|X|X|X|X}
+		\begin{tabularx}{\textwidth}{|c|X|X|X|X|} \hline
 			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
 			\hline
 			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
@@ -856,7 +862,7 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 	
 	\begin{center}
 	\begin{table}[H]
-		\begin{tabularx}{\textwidth}{c|X|X|X|X}
+		\begin{tabularx}{\textwidth}{|c|X|X|X|X|} \hline
 			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
 			\hline
 			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
@@ -870,7 +876,7 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 	
 	\begin{center}
 	\begin{table}[H]
-		\begin{tabularx}{\textwidth}{c|X|X|X|X}
+		\begin{tabularx}{\textwidth}{|c|X|X|X|X|} \hline
 			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
 			\hline
 			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
@@ -884,7 +890,7 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 	
 	\begin{center}
 	\begin{table}[H]
-		\begin{tabularx}{\textwidth}{c|X|X|X|X}
+		\begin{tabularx}{\textwidth}{|c|X|X|X|X|} \hline
 			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
 			\hline
 			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
@@ -892,7 +898,7 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Opinião não alterada\\ \hline
 			
 		\end{tabularx}
-		\caption{Teste Caso de Uso AcessarRrelatório de Vendas}
+		\caption{Teste Caso de Uso Acessar Relatório de Vendas}
 	\end{table}
 	\end{center}	
 	
