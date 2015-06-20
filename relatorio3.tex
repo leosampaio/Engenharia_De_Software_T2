@@ -735,8 +735,8 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Data Válida & Formato Válido & Conf Senha = Senha & Cadastro realizado\\ \hline
 			2 & Sequência A1 - Nome inválido & Formato Inválido & Data Válida & Formato Válido & Conf Senha = Senha & Cadastro não realizado\\ \hline
 			3 & Sequência A2 - Data nascimento inválida & Formato Válido & Data Inválida & Formato Válido & Conf Senha = Senha & Cadastro não realizado\\ \hline
-			4 & Sequência A2 - Senha inválida & Formato Válido & Data Válida & Formato Inválido & Conf Senha = Senha & Cadastro não realizado\\ \hline
-			5 & Sequência A2 - Conf de senha errada & Formato Válido & Data Válido & Formato Válido & Conf Senha != Senha & Cadastro não realizado\\ \hline
+			4 & Sequência A3 - Senha inválida & Formato Válido & Data Válida & Formato Inválido & Conf Senha = Senha & Cadastro não realizado\\ \hline
+			5 & Sequência A4 - Conf de senha errada & Formato Válido & Data Válido & Formato Válido & Conf Senha != Senha & Cadastro não realizado\\ \hline
 			
 		\end{tabularx}
 		\caption{Teste Caso de Uso Incluir Usuários}
@@ -764,7 +764,7 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Plataforma Válida & Formato Válido & Jogo incluso para avaliação\\ \hline
 			2 & Sequência A1 - Nome inválido & Formato Inválido & Plataforma Válida & Formato Válido & Jogo não incluso\\ \hline
 			3 & Sequência A2 - Plataforma inválida & Formato Válido & Plataforma Inválida & Formato Válido & Jogo não incluso\\ \hline
-			4 & Sequência A2 - Descrição inválida & Formato Válido & Plataforma Válida & Formato Inválido & Jogo não incluso\\ \hline
+			4 & Sequência A3 - Descrição inválida & Formato Válido & Plataforma Válida & Formato Inválido & Jogo não incluso\\ \hline
 			
 		\end{tabularx}
 		\caption{Teste Caso de Uso Incluir Jogo}
@@ -776,9 +776,9 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 		\begin{tabularx}{\textwidth}{|c|X|X|X|X|X|} \hline
 			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Senha Antiga} & \textbf{Senha Nova} & \textbf{Confirmação Senha Nova} & \textbf{Saída Esperada} \\ \hline
 			1 & Sequência Típica - Cenário de Sucesso & Senha = Senha Antiga & Formato Válido & Conf senha = Senha nova & Senha alterada \\ \hline
-			2 & Sequência Típica - Senha antiga incorreta & Senha != Senha Antiga & Formato Válido & Conf senha = Senha nova & Senha não alterada \\ \hline
-			3 & Sequência Típica - Nova senha inválida & Senha = Senha Antiga & Formato Inválido & Conf senha = Senha nova & Senha não alterada \\ \hline
-			4 & Sequência Típica - Conf senha incorreta & Senha = Senha Antiga & Formato Válido & Conf senha != Senha nova & Senha não alterada \\ \hline
+			2 & Sequência A1 - Senha antiga incorreta & Senha != Senha Antiga & Formato Válido & Conf senha = Senha nova & Senha não alterada \\ \hline
+			3 & Sequência A2 - Nova senha inválida & Senha = Senha Antiga & Formato Inválido & Conf senha = Senha nova & Senha não alterada \\ \hline
+			4 & Sequência A3 - Conf senha incorreta & Senha = Senha Antiga & Formato Válido & Conf senha != Senha nova & Senha não alterada \\ \hline
 			
 		\end{tabularx}
 		\caption{Teste Caso de Uso Alterar Senha}
@@ -791,8 +791,8 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{E-mail} & \textbf{Senha} & \textbf{Saída Esperada} \\
 			\hline
 			1 & Sequência Típica - Cenário de Sucesso & E-mail existente & Senha correta & Login executado\\ \hline
-			2 & Sequência Típica - E-mail não existente & E-mail não existente & Senha correta & Login não executado\\ \hline
-			3 & Sequência Típica - Senha incorreta & E-mail existente & Senha Incorreta & Login não executado\\ \hline
+			2 & Sequência A1 - E-mail não existente & E-mail não existente & Senha correta & Login não executado\\ \hline
+			3 & Sequência A2 - Senha incorreta & E-mail existente & Senha Incorreta & Login não executado\\ \hline
 			
 		\end{tabularx}
 		\caption{Teste Caso de Uso Efetuar Login}
@@ -801,12 +801,11 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 	
 	\begin{center}
 	\begin{table}[H]
-		\begin{tabularx}{\textwidth}{|c|X|X|X|X|} \hline
-			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
+		\begin{tabularx}{\textwidth}{|c|X|X|X|} \hline
+			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Jogos} & \textbf{Saída Esperada} \\
 			\hline
-			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
-			2 & Sequência A1 - Opinião inválida & Formato Inválido & Formato Válido & Opinião não alterada\\ \hline
-			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Opinião não alterada\\ \hline
+			1 & Sequência Típica - Cenário de Sucesso & Jogo Válido & Interesse Atualizado\\ \hline
+			2 & Sequência A1 - Jogo inválido & Jogo inexistente & Interesse não atualizado\\ \hline
 			
 		\end{tabularx}
 		\caption{Teste Caso de Uso Gerenciar Interesse}
@@ -816,11 +815,11 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 	\begin{center}
 	\begin{table}[H]
 		\begin{tabularx}{\textwidth}{|c|X|X|X|X|} \hline
-			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
+			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Tipo Oferta} & \textbf{Jogo} & \textbf{Saída Esperada} \\
 			\hline
-			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
-			2 & Sequência A1 - Opinião inválida & Formato Inválido & Formato Válido & Opinião não alterada\\ \hline
-			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Opinião não alterada\\ \hline
+			1 & Sequência Típica - Cenário de Sucesso & Oferta Válida & Jogo Existente & Oferta Atualizado\\ \hline
+			2 & Sequência A1 - Oferta Inválida & Oferta Inválida & Jogo Existente & Oferta atualizado\\ \hline
+			2 & Sequência A2 - Jogo inválido & Oferta Válida & Jogo inexistente & Oferta atualizado\\ \hline
 			
 		\end{tabularx}
 		\caption{Teste Caso de Uso Gerenciar Oferta}
@@ -830,11 +829,11 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 	\begin{center}
 	\begin{table}[H]
 		\begin{tabularx}{\textwidth}{|c|X|X|X|X|} \hline
-			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
+			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Oferta} & \textbf{Valor} & \textbf{Saída Esperada} \\
 			\hline
-			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
-			2 & Sequência A1 - Opinião inválida & Formato Inválido & Formato Válido & Opinião não alterada\\ \hline
-			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Opinião não alterada\\ \hline
+			1 & Sequência Típica - Cenário de Sucesso & Oferta existente & Valor Válido & Venda Aprovada\\ \hline
+			2 & Sequência A1 - Oferta Inexistente & Oferta Inexistente & Valor Válido & Venda Inexistente\\ \hline
+			3 & Sequência A2 - Valor inválido & Oferta Existente & Valor Inválido & Venda Invalidada\\ \hline
 			
 		\end{tabularx}
 		\caption{Teste Caso de Uso Realizar Venda}
@@ -844,11 +843,11 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 	\begin{center}
 	\begin{table}[H]
 		\begin{tabularx}{\textwidth}{|c|X|X|X|X|} \hline
-			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
+			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Valor Venda} & \textbf{Valor Pago} & \textbf{Saída Esperada} \\
 			\hline
-			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
-			2 & Sequência A1 - Opinião inválida & Formato Inválido & Formato Válido & Opinião não alterada\\ \hline
-			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Opinião não alterada\\ \hline
+			1 & Sequência Típica - Cenário de Sucesso & Valor correto & Valor Pago = Valor Venda & Venda Concluída\\ \hline
+			2 & Sequência A1 - Valor de venda errado & Valor Errado & Valor Pago = Valor Venda & Venda não concluída\\ \hline
+			3 & Sequência A2 - Valor pago inferior ao valor de venda & Valor correto & Valor Pago < Valor Venda & Venda não concluída\\ \hline
 			
 		\end{tabularx}
 		\caption{Teste Caso de Uso Controlar Transação Financeira}
@@ -858,11 +857,11 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 	\begin{center}
 	\begin{table}[H]
 		\begin{tabularx}{\textwidth}{|c|X|X|X|X|} \hline
-			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
+			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Jogo Ofertado 1} & \textbf{Jogo Ofertado 2} & \textbf{Saída Esperada} \\
 			\hline
-			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
-			2 & Sequência A1 - Opinião inválida & Formato Inválido & Formato Válido & Opinião não alterada\\ \hline
-			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Opinião não alterada\\ \hline
+			1 & Sequência Típica - Cenário de Sucesso & Jogo Válido & Jogo Válido & Troca Válida\\ \hline
+			2 & Sequência A1 - Jogo 1 não é válido & Jogo Inválido & Jogo Válido & Troca não Válida\\ \hline
+			3 & Sequência A2 - Jogo 2 não é válido & Jogo Válido & Jogo Inválido & Troca não Válida\\ \hline
 			
 		\end{tabularx}
 		\caption{Teste Caso de Uso Realizar Troca}
@@ -871,12 +870,11 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 	
 	\begin{center}
 	\begin{table}[H]
-		\begin{tabularx}{\textwidth}{|c|X|X|X|X|} \hline
-			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
+		\begin{tabularx}{\textwidth}{|c|X|X|X|} \hline
+			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Estado} & \textbf{Saída Esperada} \\
 			\hline
-			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
-			2 & Sequência A1 - Opinião inválida & Formato Inválido & Formato Válido & Opinião não alterada\\ \hline
-			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Opinião não alterada\\ \hline
+			1 & Sequência Típica - Cenário de Sucesso & Estado Válido & Estado alterado\\ \hline
+			2 & Sequência A1 - Estádo Inválido & Estado Inválido & Estado não alterado\\ \hline
 			
 		\end{tabularx}
 		\caption{Teste Caso de Uso Alterar estado da oferta}
@@ -886,11 +884,11 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 	\begin{center}
 	\begin{table}[H]
 		\begin{tabularx}{\textwidth}{|c|X|X|X|X|} \hline
-			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
+			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Nota} & \textbf{Comentário} & \textbf{Saída Esperada} \\
 			\hline
-			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
-			2 & Sequência A1 - Opinião inválida & Formato Inválido & Formato Válido & Opinião não alterada\\ \hline
-			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Opinião não alterada\\ \hline
+			1 & Sequência Típica - Cenário de Sucesso & Nota Válida & Formato Válido & Avaliação concluída\\ \hline
+			2 & Sequência A1 - Nota Inválida & Nota Inválida & Formato Válido & Avaliação inválida\\ \hline
+			3 & Sequência A2 - Comentário Inválido & Nota Válida & Formato Inválido & Avaliação inválida\\ \hline
 			
 		\end{tabularx}
 		\caption{Teste Caso de Uso Avaliar transação de compra/troca}
@@ -900,25 +898,11 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 	\begin{center}
 	\begin{table}[H]
 		\begin{tabularx}{\textwidth}{|c|X|X|X|X|} \hline
-			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
+			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Tipo Relatorio} & \textbf{Data} & \textbf{Saída Esperada} \\
 			\hline
-			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
-			2 & Sequência A1 - Opinião inválida & Formato Inválido & Formato Válido & Opinião não alterada\\ \hline
-			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Opinião não alterada\\ \hline
-			
-		\end{tabularx}
-		\caption{Teste Caso de Uso Realizar Backups do Banco de Dados}
-	\end{table}
-	\end{center}
-	
-	\begin{center}
-	\begin{table}[H]
-		\begin{tabularx}{\textwidth}{|c|X|X|X|X|} \hline
-			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
-			\hline
-			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
-			2 & Sequência A1 - Opinião inválida & Formato Inválido & Formato Válido & Opinião não alterada\\ \hline
-			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Opinião não alterada\\ \hline
+			1 & Sequência Típica - Cenário de Sucesso & Tipo Válido & Data Válida & Relatório Acessado\\ \hline
+			2 & Sequência A1 - Tipo relatório não existente & Tipo Inválido & Data Válida & Relatório não acessado\\ \hline
+			3 & Sequência A2 - Data Inválida & Tipo Válido & Data Inválida & Relatório não acessado\\ \hline
 			
 		\end{tabularx}
 		\caption{Teste Caso de Uso Acessar Relatórios}
@@ -928,11 +912,11 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 	\begin{center}
 	\begin{table}[H]
 		\begin{tabularx}{\textwidth}{|c|X|X|X|X|} \hline
-			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
+			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Nome do Jogo} & \textbf{Desenvolvedora} & \textbf{Saída Esperada} \\
 			\hline
-			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
-			2 & Sequência A1 - Opinião inválida & Formato Inválido & Formato Válido & Opinião não alterada\\ \hline
-			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Opinião não alterada\\ \hline
+			1 & Sequência Típica - Cenário de Sucesso & Nome correto & Desenvolvedora Correta & Jogo Validado\\ \hline
+			2 & Sequência A1 - Nome do jogo não existe & Nome incorreto & Desenvolvedora correta & Jogo não válido\\ \hline
+			3 & Sequência A2 - Desenvolvedora errada & Nome correto & Desenvolvedora não existente ou errada & Jogo não válido\\ \hline
 			
 		\end{tabularx}
 		\caption{Teste Caso de Uso Verificar Cadastro de Jogo}
@@ -942,11 +926,11 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 	\begin{center}
 	\begin{table}[H]
 		\begin{tabularx}{\textwidth}{|c|X|X|X|X|} \hline
-			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
+			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Empresa} & \textbf{Foto/gif} & \textbf{Saída Esperada} \\
 			\hline
-			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
-			2 & Sequência A1 - Opinião inválida & Formato Inválido & Formato Válido & Opinião não alterada\\ \hline
-			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Opinião não alterada\\ \hline
+			1 & Sequência Típica - Cenário de Sucesso & Empresa Válida & Formato Válido & Propaganda Validada\\ \hline
+			2 & Sequência A1 - Empresa não existente & Empresa Inválida & Formato Válido & Propaganda Invalidada\\ \hline
+			3 & Sequência A2 - Formato da imagem/gif errado & Empresa Válida & Formato Inválido & Propaganda Invalidada\\ \hline
 			
 		\end{tabularx}
 		\caption{Teste Caso de Uso Gerenciar Propagandas}
@@ -956,11 +940,11 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 	\begin{center}
 	\begin{table}[H]
 		\begin{tabularx}{\textwidth}{|c|X|X|X|X|} \hline
-			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Entrada 1} & \textbf{Entrada 2} & \textbf{Saída Esperada} \\
+			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Tipo de Relatório} & \textbf{Data} & \textbf{Saída Esperada} \\
 			\hline
-			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
-			2 & Sequência A1 - Opinião inválida & Formato Inválido & Formato Válido & Opinião não alterada\\ \hline
-			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Opinião não alterada\\ \hline
+			1 & Sequência Típica - Cenário de Sucesso & Tipo Válido & Data Válida & Relatório Acessado\\ \hline
+			2 & Sequência A1 - Tipo relatório não existente & Tipo Inválido & Data Válida & Relatório não acessado\\ \hline
+			3 & Sequência A2 - Data Inválida & Tipo Válido & Data Inválida & Relatório não acessado\\ \hline
 			
 		\end{tabularx}
 		\caption{Teste Caso de Uso Acessar Relatório de Vendas}
