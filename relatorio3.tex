@@ -460,20 +460,32 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 		\hline
 			\textbf{Caso de Uso} &  Alterar estado da oferta \\ \hline
 			\textbf{Atores} &  Usuário  \\ \hline
-			\textbf{Finalidade} &   \\ \hline
-			\textbf{Visão Geral} &  \\ \hline
+			\textbf{Finalidade} &  O usuário realiza uma transação de inclusão ou atualização de uma troca ou venda de um jogo cadastrado e deseja que o estado da oferta seja modificado. \\ \hline
+			\textbf{Visão Geral} & O usuário acessa a área de gerenciar ofertas para fazer uma atulização do estado de uma oferta cadastrada e a após a mudança os dados são salvos no sistema. \\ \hline
 			\textbf{Tipo} & Primária e essencial. \\ \hline
-			\textbf{Referências Cruzadas} &  \\ \hline
+			\textbf{Referências Cruzadas} & * \\ \hline
 			\textbf{Sequência Típica} & 
 			\begin{enumerate}
-			\item Ter tolerância no cronograma
+			\item O usuário seleciona a opçao de alterar o estado de uma oferta.
+			\item O sistema exibe as ofertas cadastradas pelo usário com a opção de modificar o estado da oferta.
+			\item O usuário muda o estado de uma oferta "não visível"  para "visível".
+			\item O sistema informa ao usuário que a mudança foi realizada.
+			\item O usuário termina a operação
+			\item O sistema salva as informações e retorna para a tela inicial.  
 			\end{enumerate} \\ \hline
 			
 			\textbf{Sequências Alternativas} & 
 			\begin{itemize}
-				\item[2.] Ter tolerância no cronograma
+				\item[1.] O usuário seleciona a opçao de alterar o estado de uma oferta.
 				\begin{itemize}
-					\item[2.1.] Ter tolerância no cronograma
+					\item[1.1.] O sistema informa que o usuário não tem jogos cadastrados para modificar a oferta.
+				\end{itemize}
+				\item[2.] O sistema exibe as ofertas cadastradas pelo usário com a opção de modificar o estado da oferta.
+				\begin{itemize}
+					\item[2.1.] O usuário muda o estado de uma oferta "visível"  para "não visível".
+					\item[2.2.] O sistema informa ao usuário que a mudança foi realizada.
+					\item[2.3.] O usuário termina a operação
+					\item[2.4.] O sistema salva as informações e retorna para a tela inicial.
 				\end{itemize}
 			\end{itemize} \\ \hline
 		\end{tabularx}
