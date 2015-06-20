@@ -720,7 +720,7 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Busca} & \textbf{Saída Esperada} \\
 			\hline
 			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Busca realizada\\ \hline
-			2 & Sequência A1 - Busca inválida & Formato Inválido & Busca não alterada\\ \hline
+			2 & Sequência A1 - Busca inválida & Formato Inválido & Busca não realizada\\ \hline
 			
 		\end{tabularx}
 		\caption{Teste Caso de Uso Buscar Jogos}
@@ -732,9 +732,11 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 		\begin{tabularx}{\textwidth}{|c|X|X|X|X|X|X|} \hline
 			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Nome} & \textbf{Nascimento} & \textbf{Senha} & \textbf{Confirmação Senha} & \textbf{Saída Esperada} \\
 			\hline
-			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Formato Válido & Formato Válido & Opinião alterada\\ \hline
-			2 & Sequência A1 - Opinião inválida & Formato Inválido & Formato Válido & Formato Inválido & Formato Inválido & Opinião não alterada\\ \hline
-			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Formato Inválido & Formato Inválido & Opinião não alterada\\ \hline
+			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Data Válida & Formato Válido & Conf Senha = Senha & Cadastro realizado\\ \hline
+			2 & Sequência A1 - Nome inválido & Formato Inválido & Data Válida & Formato Válido & Conf Senha = Senha & Cadastro não realizado\\ \hline
+			3 & Sequência A2 - Data nascimento inválida & Formato Válido & Data Inválida & Formato Válido & Conf Senha = Senha & Cadastro não realizado\\ \hline
+			4 & Sequência A2 - Senha inválida & Formato Válido & Data Válida & Formato Inválido & Conf Senha = Senha & Cadastro não realizado\\ \hline
+			5 & Sequência A2 - Conf de senha errada & Formato Válido & Data Válido & Formato Válido & Conf Senha != Senha & Cadastro não realizado\\ \hline
 			
 		\end{tabularx}
 		\caption{Teste Caso de Uso Incluir Usuários}
@@ -746,9 +748,8 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 		\begin{tabularx}{\textwidth}{|c|X|X|X|} \hline
 			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{CNPJ} & \textbf{Saída Esperada} \\
 			\hline
-			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Opinião alterada\\ \hline
-			2 & Sequência A1 - Opinião inválida & Formato Inválido & Opinião não alterada\\ \hline
-			3 & Sequência A2 - Avaliação inválida & Formato Válido & Opinião não alterada\\ \hline
+			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & CNPJ Cadastrado\\ \hline
+			2 & Sequência A1 - CNPJ Inválido & Formato Inválido & CNPJ não Cadastrado\\ \hline
 			
 		\end{tabularx}
 		\caption{Teste Caso de Uso Cadastrar CNPJ}
@@ -757,12 +758,13 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 	
 	\begin{center}
 	\begin{table}[H]
-		\begin{tabularx}{\textwidth}{|c|X|X|X|X|} \hline
-			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Nome} & \textbf{Descrição} & \textbf{Saída Esperada} \\
+		\begin{tabularx}{\textwidth}{|c|X|X|X|X|X|} \hline
+			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Nome} & \textbf{Plataforma} & \textbf{Descrição} & \textbf{Saída Esperada} \\
 			\hline
-			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
-			2 & Sequência A1 - Opinião inválida & Formato Inválido & Formato Válido & Opinião não alterada\\ \hline
-			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Opinião não alterada\\ \hline
+			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Plataforma Válida & Formato Válido & Jogo incluso para avaliação\\ \hline
+			2 & Sequência A1 - Nome inválido & Formato Inválido & Plataforma Válida & Formato Válido & Jogo não incluso\\ \hline
+			3 & Sequência A2 - Plataforma inválida & Formato Válido & Plataforma Inválida & Formato Válido & Jogo não incluso\\ \hline
+			4 & Sequência A2 - Descrição inválida & Formato Válido & Plataforma Válida & Formato Inválido & Jogo não incluso\\ \hline
 			
 		\end{tabularx}
 		\caption{Teste Caso de Uso Incluir Jogo}
@@ -773,9 +775,10 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 	\begin{table}[H]
 		\begin{tabularx}{\textwidth}{|c|X|X|X|X|X|} \hline
 			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{Senha Antiga} & \textbf{Senha Nova} & \textbf{Confirmação Senha Nova} & \textbf{Saída Esperada} \\ \hline
-			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada & Saida \\ \hline
-			2 & Sequência A1 - Opinião inválida & Formato Inválido & Formato Válido & Opinião não alterada & Saida \\ \hline
-			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Opinião não alterada & Saida \\ \hline
+			1 & Sequência Típica - Cenário de Sucesso & Senha = Senha Antiga & Formato Válido & Conf senha = Senha nova & Senha alterada \\ \hline
+			2 & Sequência Típica - Senha antiga incorreta & Senha != Senha Antiga & Formato Válido & Conf senha = Senha nova & Senha não alterada \\ \hline
+			3 & Sequência Típica - Nova senha inválida & Senha = Senha Antiga & Formato Inválido & Conf senha = Senha nova & Senha não alterada \\ \hline
+			4 & Sequência Típica - Conf senha incorreta & Senha = Senha Antiga & Formato Válido & Conf senha != Senha nova & Senha não alterada \\ \hline
 			
 		\end{tabularx}
 		\caption{Teste Caso de Uso Alterar Senha}
@@ -787,9 +790,9 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 		\begin{tabularx}{\textwidth}{|c|X|X|X|X|} \hline
 			\textbf{Caso de teste} & \textbf{Cenário} & \textbf{E-mail} & \textbf{Senha} & \textbf{Saída Esperada} \\
 			\hline
-			1 & Sequência Típica - Cenário de Sucesso & Formato Válido & Formato Válido & Opinião alterada\\ \hline
-			2 & Sequência A1 - Opinião inválida & Formato Inválido & Formato Válido & Opinião não alterada\\ \hline
-			3 & Sequência A2 - Avaliação inválida & Formato Válido & Formato Inválido & Opinião não alterada\\ \hline
+			1 & Sequência Típica - Cenário de Sucesso & E-mail existente & Senha correta & Login executado\\ \hline
+			2 & Sequência Típica - E-mail não existente & E-mail não existente & Senha correta & Login não executado\\ \hline
+			3 & Sequência Típica - Senha incorreta & E-mail existente & Senha Incorreta & Login não executado\\ \hline
 			
 		\end{tabularx}
 		\caption{Teste Caso de Uso Efetuar Login}
