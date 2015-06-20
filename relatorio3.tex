@@ -380,20 +380,36 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 		\hline
 			\textbf{Caso de Uso} &  Realizar venda \\ \hline
 			\textbf{Atores} &  Usuário  \\ \hline
-			\textbf{Finalidade} &   \\ \hline
-			\textbf{Visão Geral} &  \\ \hline
+			\textbf{Finalidade} & O usuário deseja realizar a venda de jogos cadastrados aprovando a transação.   \\ \hline
+			\textbf{Visão Geral} & O usuário acessa a área de gerenciar ofertas e verifica que existem transações de vendas para serem aprovadas e finalizadas. Após realizar a aprovação da venda as informações sobre a transação são salvas no sistema.  \\ \hline
 			\textbf{Tipo} & Primária e essencial. \\ \hline
-			\textbf{Referências Cruzadas} &  \\ \hline
+			\textbf{Referências Cruzadas} & * \\ \hline
 			\textbf{Sequência Típica} & 
 			\begin{enumerate}
-			\item Ter tolerância no cronograma
+			\item O usuário acessa a opção de realizar venda.
+			\item O sistema exibe as transações de vendas pendentes.
+			\item O usuário seleciona a transação de venda para aprovação.
+			\item O sistema exibe as informações sobre a transação de venda.
+			\item O usuário aprova a solicitação de venda.
+			\item O sistema informa aos usuários envolvidos que a venda foi aprovada.
+			\item O usuário termina a operação.
+			\item O sistema retorna para a tela inicial.
+			 
 			\end{enumerate} \\ \hline
 			
 			\textbf{Sequências Alternativas} & 
 			\begin{itemize}
-				\item[2.] Ter tolerância no cronograma
+				\item[1.] O usuário acessa a opção de realizar venda.			
 				\begin{itemize}
-					\item[2.1.] Ter tolerância no cronograma
+					\item[1.1.] O sistema informa que não solicitações de vendas no momento.
+				\end{itemize}				
+				
+				\item[4.] O sistema exibe as informações sobre a transação de venda.
+				\begin{itemize}
+					\item[4.1.] O usuário reprova a solicitação de venda.
+					\item[4.2.] O sistema informa aos usuários envolvidos que a venda foi reprovada.	
+					\item[4.3.] O usuário termina a operação.
+					\item[4.4.] O sistema retorna para a tela inicial.
 				\end{itemize}
 			\end{itemize} \\ \hline
 		\end{tabularx}
