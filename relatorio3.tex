@@ -452,20 +452,31 @@ de buscar. O sistema mostra todos os resultados da busca.  \\ \hline
 		\hline
 			\textbf{Caso de Uso} &  Controlar transação financeira \\ \hline
 			\textbf{Atores} &  Administrador, Patrocinador e sistema financeiro  \\ \hline
-			\textbf{Finalidade} &   \\ \hline
-			\textbf{Visão Geral} &  \\ \hline
+			\textbf{Finalidade} & Os interessados desejam visualizar e controlar as transações financeiras realizadas pelos usuários.  \\ \hline
+			\textbf{Visão Geral} & Os interessados acessam a área de Controle de transações financeiras para fazer o controle sobre as transações nas vendas realizadas.   \\ \hline
 			\textbf{Tipo} & Primária e essencial. \\ \hline
-			\textbf{Referências Cruzadas} &  \\ \hline
+			\textbf{Referências Cruzadas} &  R22 \\ \hline
 			\textbf{Sequência Típica} & 
 			\begin{enumerate}
-			\item Ter tolerância no cronograma
+			\item Os atores interessados acessam a área de controle de transações financeiras.
+			\item O sistema exibe uma tela com as opções de controle sobre as transações.
+			\item Os atores interessados escolhem a opção de controle gerar relatório de vendas escolhendo um período.
+			\item O sistema exibe o relatório de vendas para o determinado período escolhido e da a opção de impressão do relatório.
+			\item O interessado clica no botão para realizar a impressão do relatório.
+			\item O sistema fornece uma tela com o relatório pronto para impressão.
+			\item O interessado realiza a impressão do relatório e termina a operação.
+			\item O sistema retorna para a tela inicial.
 			\end{enumerate} \\ \hline
 			
 			\textbf{Sequências Alternativas} & 
 			\begin{itemize}
-				\item[2.] Ter tolerância no cronograma
+				\item[1.] Os atores interessados acessam a área de controle de transações financeiras.			
 				\begin{itemize}
-					\item[2.1.] Ter tolerância no cronograma
+					\item[1.1.]O sistema informa o interessado que não transações a serem gerenciadas.
+				\end{itemize}
+				\item[][4.][5.][6.] 
+				\begin{itemize}
+					\item[][4.1.][5.1.][6.1.] O interessado cancela a operação.
 				\end{itemize}
 			\end{itemize} \\ \hline
 		\end{tabularx}
@@ -915,42 +926,42 @@ O projeto de interface levou em consideração as principais interações usuár
 
 \begin{figure}[!H]
     		\centering
-%        	\includegraphics[width=\textwidth,height=\dimexpr\textheight-3\baselineskip\relax,keepaspectratio]{Home.png}
+        	\includegraphics[width=\textwidth,height=\dimexpr\textheight-3\baselineskip\relax,keepaspectratio]{Home.png}
         	\caption{Página inicial do sistema}
      		\label{home}
 \end{figure}
 
 \begin{figure}[!H]
     		\centering
-%        	\includegraphics[width=\textwidth,height=\dimexpr\textheight-3\baselineskip\relax,keepaspectratio]{Cadastro.png}
+        	\includegraphics[width=\textwidth,height=\dimexpr\textheight-3\baselineskip\relax,keepaspectratio]{Cadastro.png}
         	\caption{Janela modal de login usuário}
      		\label{cadastro}
 \end{figure}
 
 \begin{figure}[!H]
     		\centering
-%        	\includegraphics[width=\textwidth,height=\dimexpr\textheight-3\baselineskip\relax,keepaspectratio]{Login.png}
+        	\includegraphics[width=\textwidth,height=\dimexpr\textheight-3\baselineskip\relax,keepaspectratio]{Login.png}
         	\caption{Janela modal de cadastro de novo usuário}
      		\label{login}
 \end{figure}
 
 \begin{figure}[!H]
     		\centering
-%        	\includegraphics[width=\textwidth,height=\dimexpr\textheight-3\baselineskip\relax,keepaspectratio]{Busca.png}
+        	\includegraphics[width=\textwidth,height=\dimexpr\textheight-3\baselineskip\relax,keepaspectratio]{Busca.png}
         	\caption{Resultado de uma busca de jogo}
      		\label{busca}
 \end{figure}
 
 \begin{figure}[!H]
     		\centering
-%        	\includegraphics[width=\textwidth,height=\dimexpr\textheight-3\baselineskip\relax,keepaspectratio]{Detalhe.png}
+        	\includegraphics[width=\textwidth,height=\dimexpr\textheight-3\baselineskip\relax,keepaspectratio]{Detalhe.png}
         	\caption{Página de venda ou troca de jogo, com detalhes do jogo e da oferta}
      		\label{detalhe}
 \end{figure}
 
 \begin{figure}[!H]
     		\centering
-%        	\includegraphics[width=\textwidth,height=\dimexpr\textheight-3\baselineskip\relax,keepaspectratio]{Busca.png}
+        	\includegraphics[width=\textwidth,height=\dimexpr\textheight-3\baselineskip\relax,keepaspectratio]{Busca.png}
         	\caption{Resultado de uma busca de jogo}
      		\label{diagrama}
 \end{figure}
@@ -959,7 +970,7 @@ O projeto de interface levou em consideração as principais interações usuár
 
 \begin{figure}[!H]
     		\centering
-%        	\includegraphics[width=\textwidth,height=\dimexpr\textheight-3\baselineskip\relax,keepaspectratio]{Diagrama.png}
+        	\includegraphics[width=\textwidth,height=\dimexpr\textheight-3\baselineskip\relax,keepaspectratio]{Diagrama.png}
         	\caption{Diagrama de Casos de Uso}
      		\label{diagrama}
 \end{figure}
